@@ -2,7 +2,7 @@
 
 [English](README.md) · [한국어](README.ko.md)
 
-**Version 1.0.1** — A free, local macOS shortcut reference that stays beside your work. Follow the active app, browse macOS shortcuts, or pin a saved app's list. No server, account, subscription, or external package dependencies.
+**Version 1.0.2** — A free, local macOS shortcut reference that stays beside your work. Follow the active app, browse macOS shortcuts, or pin a saved app's list. No server, account, subscription, or external package dependencies.
 
 Requires **macOS 13 or later**. The current app interface and bundled shortcut descriptions are in Korean.
 
@@ -42,7 +42,7 @@ In the dropdown, type an app name to search, use **arrow keys** to move, **Retur
 
 Use your left hand for the modifiers and your right hand for the final key. Each shortcut can be changed or disabled in settings. Cheatble checks known shortcut lists and system registration conflicts; it cannot detect every app's internal shortcuts.
 
-If a newly loaded pack conflicts with a configured hotkey, that hotkey is temporarily unregistered and settings show the conflict. Removing the conflicting pack restores the hotkey without changing your saved key combination.
+Conflict checks use the same merged values as the sheet, including custom overrides and OS compatibility. If a newly loaded pack or an edited list conflicts with a configured hotkey, that hotkey is temporarily unregistered and settings show the conflict. Resolving the conflict restores the hotkey without changing your saved key combination.
 
 ### Move, resize, and adjust opacity
 
@@ -58,7 +58,7 @@ If a newly loaded pack conflicts with a configured hotkey, that hotkey is tempor
 - Click a category header to collapse or expand it. Click a shortcut row to reveal its description, **favorite**, **learned**, and **pencil/edit** controls.
 - Use **설정 → 앱별 단축키 설정** to add, edit, or remove custom entries. Removing an override restores the original menu or bundled value. Editing a reference does not change the shortcut in the target app.
 - Settings can import/export custom entries, saved menus, favorites, learned marks, and collapsed groups as JSON. Import merges data; imported custom entries replace matching custom entries. Shortcut packs are stored separately.
-- **메뉴 더 읽기** switches to the target app and briefly opens its menus to discover lazily created items. Normal refresh does not open menus or execute commands.
+- **메뉴 더 읽기** switches to the target app and briefly opens its menus to discover lazily created items. Normal refresh does not open menus or execute commands. Incomplete reads preserve previously saved menu entries.
 
 Key symbols: `⌘` Command · `⌥` Option · `⌃` Control · `⇧` Shift · `⇥` Tab · `↩` Return · `⌫` Delete. Press keys within one combination together. For `Control+B → C`, release the first combination before pressing the next key. Enter arrow keys as `Left`, `Right`, `Up`, or `Down`, and the plus key as `Plus`.
 
@@ -135,6 +135,8 @@ bash scripts/smoke-test.sh        # Requires a logged-in macOS GUI session
 ```
 
 Outputs are `dist/Cheatble.app` and `dist/Cheatble.zip`, built for the Mac's architecture. Packaging and validation finish in a staging directory before replacing existing outputs; replacement errors restore the previous outputs. Set `CHEATBLE_CACHE_DIR` to use another build cache directory.
+
+`scripts/test.sh` includes nonvisual regression checks for menu read failures and hotkey conflicts. These checks use temporary data and simulated OS responses without opening windows or registering global hotkeys.
 
 The signing key stays in the login Keychain. Allow `codesign` to use it when macOS asks. Public signing configuration is outside the repository at `~/Library/Application Support/Cheatble/Signing`. Reuse this identity for updates to preserve Accessibility authorization. Temporary ad-hoc builds use `CHEATBLE_ADHOC_SIGNING=1 bash scripts/build-app.sh`; installing one over a certificate-signed copy changes its identity.
 

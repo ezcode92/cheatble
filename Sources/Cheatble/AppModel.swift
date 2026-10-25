@@ -96,13 +96,14 @@ final class AppModel: ObservableObject {
         shortcuts(for: scope, includeLiveMenu: isFollowingActiveApp)
     }
     func shortcuts(for scope: String, includeLiveMenu: Bool = false) -> [ShortcutEntry] {
-        ShortcutMerger.merge([
-            catalog.shortcuts(for: scope, osMajor: osMajor),
-            packEntries.filter { $0.scope == scope && $0.supports(osMajor: osMajor) },
-            library.apps.first { $0.id == scope }?.entries ?? [],
-            includeLiveMenu ? (snapshot?.entries.filter { $0.scope == scope } ?? []) : [],
-            library.entries.filter { $0.scope == scope && $0.supports(osMajor: osMajor) }
-        ])
+        effectiveShortcuts(scope: scope, includeLiveMenu: includeLiveMenu)
+    }
+    private func effectiveShortcuts(scope: String? = nil, includeLiveMenu: Bool) -> [ShortcutEntry] {
+        let sources = [catalog.entries, packEntries, library.apps.flatMap(\.entries),
+                       includeLiveMenu ? snapshot?.entries ?? [] : [], library.entries]
+        return ShortcutMerger.merge(sources.map { entries in
+            entries.filter { (scope == nil || $0.scope == scope) && $0.supports(osMajor: osMajor) }
+        })
     }
     struct SavedChoice: Identifiable {
         let id: String
@@ -272,7 +273,7 @@ final class AppModel: ObservableObject {
         try validateCatalogShortcut(shortcut)
     }
     private func validateCatalogShortcut(_ shortcut: ToggleShortcut) throws {
-        if let conflict = (catalog.entries + packEntries + (snapshot?.entries ?? []) + library.entries + library.apps.flatMap(\.entries)).first(where: {
+        if let conflict = effectiveShortcuts(includeLiveMenu: true).first(where: {
             $0.sequence.first == shortcut.chord
         }) {
             throw shortcutError("‘\(conflict.title)’에서 사용 중인 키 조합입니다. 다른 조합을 선택해 주세요.")
@@ -484,7 +485,15 @@ final class AppModel: ObservableObject {
         var next = library
         change(&next)
         do {
-            if next != library { try storage.save(next); library = next }
+            if next != library {
+                let shortcutsChanged = next.entries != library.entries || next.apps != library.apps
+                try storage.save(next)
+                library = next
+                if shortcutsChanged {
+                    activateToggleShortcut()
+                    activateNavigationShortcuts()
+                }
+            }
             if clearError { error = nil }
             return true
         }

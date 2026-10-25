@@ -4,26 +4,38 @@ import Carbon
 import CheatbleCore
 
 enum AXRead {
-    static func value(_ element: AXUIElement, _ attribute: String) -> CFTypeRef? {
+    private static func succeeded(_ status: AXError, onIncomplete: (() -> Void)?) -> Bool {
+        // Missing optional attributes and children on leaf nodes are normal.
+        if status != .success && status != .attributeUnsupported && status != .noValue { onIncomplete?() }
+        return status == .success
+    }
+    static func value(_ element: AXUIElement, _ attribute: String, onIncomplete: (() -> Void)? = nil) -> CFTypeRef? {
         var value: CFTypeRef?
-        guard AXUIElementCopyAttributeValue(element, attribute as CFString, &value) == .success else { return nil }
+        guard succeeded(AXUIElementCopyAttributeValue(element, attribute as CFString, &value),
+                        onIncomplete: onIncomplete) else { return nil }
         return value
     }
     static func element(_ element: AXUIElement, _ attribute: String) -> AXUIElement? {
         guard let value = value(element, attribute), CFGetTypeID(value) == AXUIElementGetTypeID() else { return nil }
         return unsafeBitCast(value, to: AXUIElement.self)
     }
-    static func children(_ element: AXUIElement, limit: Int = 2000) -> [AXUIElement] {
+    static func children(_ element: AXUIElement, limit: Int = 2000, onIncomplete: (() -> Void)? = nil) -> [AXUIElement] {
         var count: CFIndex = 0
-        guard AXUIElementGetAttributeValueCount(element, kAXChildrenAttribute as CFString, &count) == .success,
+        guard succeeded(AXUIElementGetAttributeValueCount(element, kAXChildrenAttribute as CFString, &count),
+                        onIncomplete: onIncomplete),
               count > 0 else { return [] }
+        if count > limit { onIncomplete?() }
         var result: CFArray?
+        // Once a positive count was reported, losing the children is incomplete
+        // even if the app now reports noValue/attributeUnsupported.
         guard AXUIElementCopyAttributeValues(element, kAXChildrenAttribute as CFString, 0,
-                                            min(count, limit), &result) == .success else { return [] }
-        return (result as? [AXUIElement]) ?? []
+                                            min(count, limit), &result) == .success else { onIncomplete?(); return [] }
+        guard let children = result as? [AXUIElement] else { onIncomplete?(); return [] }
+        if children.count != min(count, limit) { onIncomplete?() }
+        return children
     }
-    static func text(_ element: AXUIElement, _ attribute: String) -> String? {
-        value(element, attribute) as? String
+    static func text(_ element: AXUIElement, _ attribute: String, onIncomplete: (() -> Void)? = nil) -> String? {
+        value(element, attribute, onIncomplete: onIncomplete) as? String
     }
     static func frame(_ element: AXUIElement) -> CGRect? {
         guard let position = value(element, kAXPositionAttribute), let size = value(element, kAXSizeAttribute),
@@ -83,6 +95,7 @@ final class AccessibilityMenuReader {
         var visited = Set<CFHashCode>()
         var nodes = 0
         var partial = false
+        let markIncomplete = { partial = true }
         var openedMenu: AXUIElement?
         // Cancellation closes only a menu this operation successfully opened.
         func closeMenu(_ top: AXUIElement) -> Bool {
@@ -104,14 +117,14 @@ final class AccessibilityMenuReader {
             guard visited.insert(hash).inserted else { return }
             nodes += 1
             AXUIElementSetMessagingTimeout(element, 0.15)
-            let title = AXRead.text(element, kAXTitleAttribute)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
-            let role = AXRead.text(element, kAXRoleAttribute) ?? ""
+            let title = AXRead.text(element, kAXTitleAttribute, onIncomplete: markIncomplete)?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+            let role = AXRead.text(element, kAXRoleAttribute, onIncomplete: markIncomplete) ?? ""
             var nextPath = path
             if !title.isEmpty, role != kAXMenuRole { nextPath.append(title) }
-            if role == kAXMenuItemRole, !title.isEmpty, let chord = Self.chord(element) {
+            if role == kAXMenuItemRole, !title.isEmpty, let chord = Self.chord(element, onIncomplete: markIncomplete) {
                 let known = matchingCatalog.match(scope: scope, menuTitle: title)
                 let action = known?.actionID ?? "menu:" + nextPath.map { "\($0.utf8.count):\($0)" }.joined()
-                let enabled = (AXRead.value(element, kAXEnabledAttribute) as? NSNumber)?.boolValue
+                let enabled = (AXRead.value(element, kAXEnabledAttribute, onIncomplete: markIncomplete) as? NSNumber)?.boolValue
                 let detail = known.map { "\($0.title)" + ($0.detail.map { " · \($0)" } ?? "") }
                 entries.append(ShortcutEntry(scope: scope, actionID: action, title: title,
                     category: known?.category ?? path.first ?? "앱 메뉴", sequence: [chord],
@@ -120,16 +133,13 @@ final class AccessibilityMenuReader {
             }
             let remaining = 3000 - nodes
             guard remaining > 0 else { partial = true; return }
-            var count: CFIndex = 0
-            if AXUIElementGetAttributeValueCount(element, kAXChildrenAttribute as CFString, &count) == .success,
-               count > remaining { partial = true }
-            for child in AXRead.children(element, limit: remaining) {
+            for child in AXRead.children(element, limit: remaining, onIncomplete: markIncomplete) {
                 guard allowed() else { break }
                 visit(child, path: nextPath, depth: depth + 1)
             }
         }
 
-        let topMenus = AXRead.children(menuBar, limit: 40)
+        let topMenus = AXRead.children(menuBar, limit: 40, onIncomplete: markIncomplete)
         for top in topMenus {
             guard allowed() else { break }
             if deep {
@@ -137,9 +147,9 @@ final class AccessibilityMenuReader {
                 // never AXPress a command leaf or synthesize keystrokes.
                 let stillFrontmost = (AXRead.value(application, kAXFrontmostAttribute) as? NSNumber)?.boolValue == true
                 guard stillFrontmost else { partial = true; break }
-                if AXRead.text(top, kAXRoleAttribute) == kAXMenuBarItemRole,
-                   AXUIElementPerformAction(top, kAXPressAction as CFString) == .success {
-                    openedMenu = top
+                if AXRead.text(top, kAXRoleAttribute, onIncomplete: markIncomplete) == kAXMenuBarItemRole {
+                    if AXUIElementPerformAction(top, kAXPressAction as CFString) == .success { openedMenu = top }
+                    else { partial = true }
                 }
             }
             visit(top, path: [], depth: 0)
@@ -157,10 +167,10 @@ final class AccessibilityMenuReader {
                      message: partial ? "일부 메뉴만 읽었습니다. 목록을 새로고침하거나 직접 보완할 수 있습니다." : nil)
     }
 
-    private static func chord(_ element: AXUIElement) -> KeyChord? {
-        let character = AXRead.text(element, kAXMenuItemCmdCharAttribute) ?? ""
-        let code = (AXRead.value(element, kAXMenuItemCmdVirtualKeyAttribute) as? NSNumber)?.intValue
-        let glyph = (AXRead.value(element, kAXMenuItemCmdGlyphAttribute) as? NSNumber)?.intValue
+    private static func chord(_ element: AXUIElement, onIncomplete: (() -> Void)?) -> KeyChord? {
+        let character = AXRead.text(element, kAXMenuItemCmdCharAttribute, onIncomplete: onIncomplete) ?? ""
+        let code = (AXRead.value(element, kAXMenuItemCmdVirtualKeyAttribute, onIncomplete: onIncomplete) as? NSNumber)?.intValue
+        let glyph = (AXRead.value(element, kAXMenuItemCmdGlyphAttribute, onIncomplete: onIncomplete) as? NSNumber)?.intValue
         let specialKeys: [Int: String] = [
             36: "Return", 48: "Tab", 49: "Space", 51: "Delete", 53: "Escape",
             76: "Return", 115: "Home", 116: "PageUp", 117: "ForwardDelete",
@@ -177,7 +187,7 @@ final class AccessibilityMenuReader {
         else if !character.isEmpty, character.unicodeScalars.allSatisfy({ !CharacterSet.controlCharacters.contains($0) }) {
             key = character
         } else { return nil }
-        guard let mask = (AXRead.value(element, kAXMenuItemCmdModifiersAttribute) as? NSNumber)?.intValue else { return nil }
+        guard let mask = (AXRead.value(element, kAXMenuItemCmdModifiersAttribute, onIncomplete: onIncomplete) as? NSNumber)?.intValue else { return nil }
         return KeyChord(modifiers: Modifier.accessibilityMask(mask), key: key)
     }
 }
