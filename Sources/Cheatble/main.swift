@@ -238,7 +238,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             let startupModel = AppModel(catalog: model.catalog, defaults: startupDefaults,
                                         storageURL: startupDirectory.appendingPathComponent("library.json"))
             var registrationCalls = 0
-            startupModel.onToggleShortcutChange = { _ in registrationCalls += 1 }
+            var startupRegistration: ToggleShortcut?
+            startupModel.onToggleShortcutChange = { shortcut in registrationCalls += 1; startupRegistration = shortcut }
             startupModel.activateToggleShortcut()
             report["startupPackPrefixConflictRejected"] = registrationCalls == 0 &&
                 !startupModel.toggleShortcutRegistered && startupModel.toggleShortcutError != nil
@@ -252,11 +253,46 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
                 startupModel.toggleShortcut == initialShortcut &&
                 startupModel.toggleShortcutRegistered
             var navigationCalls = 0
-            startupModel.onNavigationShortcutChange = { _, _ in navigationCalls += 1 }
+            var startupNavigation: [NavigationAction: ToggleShortcut] = [:]
+            startupModel.onNavigationShortcutChange = { action, shortcut in
+                navigationCalls += 1
+                startupNavigation[action] = shortcut
+            }
             let oldNavigation = startupModel.navigationShortcuts[.system]
             report["navigationPackPrefixConflictRejected"] =
                 !startupModel.updateNavigationShortcut(.system, text: prefixText) && navigationCalls == 0 &&
                 startupModel.navigationShortcuts[.system] == oldNavigation
+            startupModel.start()
+            defer { startupModel.stop() }
+            func waitForPackUpdate(_ condition: () -> Bool) {
+                let deadline = Date().addingTimeInterval(3)
+                while !condition() && Date() < deadline {
+                    RunLoop.main.run(until: Date().addingTimeInterval(0.05))
+                }
+            }
+            waitForPackUpdate { startupModel.navigationRegistered.count == 3 }
+            fixture.shortcuts.append(.init(id: "conflict.toggle", title: "토글 충돌", category: "검증", keys: initialKey))
+            fixture.shortcuts.append(.init(id: "conflict.system", title: "목록 충돌", category: "검증",
+                keys: KeySequence.editable([oldNavigation!.chord])))
+            let conflictURL = try startupModel.packStorage.install(fixture)
+            startupModel.reloadPacks()
+            waitForPackUpdate { startupModel.toggleShortcutError != nil && startupModel.navigationErrors[.system] != nil }
+            report["hotReloadUnregistersConflictingKeys"] = !startupModel.toggleShortcutRegistered && startupRegistration == nil &&
+                !startupModel.navigationRegistered.contains(.system) && startupNavigation[.system] == nil &&
+                startupModel.toggleShortcutEnabled && startupModel.navigationEnabled[.system] == true
+            try FileManager.default.removeItem(at: conflictURL)
+            startupModel.reloadPacks()
+            waitForPackUpdate { startupModel.toggleShortcutRegistered && startupModel.navigationRegistered.contains(.system) }
+            report["removingPackRestoresConfiguredKeys"] = startupRegistration == initialShortcut &&
+                startupNavigation[.system] == oldNavigation && startupModel.toggleShortcutError == nil &&
+                startupModel.navigationErrors[.system] == nil && ToggleShortcut.load(from: startupDefaults) == initialShortcut
+            var edited = entry
+            edited.source = .user; edited.scope = "InvalidScope"
+            let rejected = !startupModel.saveEntry(edited) && startupModel.error != nil
+            edited.scope = entry.scope
+            report["successfulSaveClearsError"] = rejected && startupModel.saveEntry(edited) && startupModel.error == nil
+            startupModel.error = "이전 오류"
+            report["unchangedSuccessfulSaveClearsError"] = startupModel.saveEntry(edited) && startupModel.error == nil
             // Feed Carbon hot-key notifications only to this app's event target.
             // This never posts keyboard input into another application.
             func sendHotKey(_ kind: UInt32, hotKey: GlobalHotKey? = nil) -> Bool {

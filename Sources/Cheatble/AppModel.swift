@@ -200,6 +200,8 @@ final class AppModel: ObservableObject {
             self.packEntries = loaded.packs.flatMap { (try? $0.entries()) ?? [] }
             self.packIssues = loaded.issues
             self.nameCache.removeAll(); self.iconCache.removeAll()
+            self.activateToggleShortcut()
+            self.activateNavigationShortcuts()
             self.scheduleRefresh()
         }
         packObserver.start()
@@ -234,6 +236,7 @@ final class AppModel: ObservableObject {
         }
     }
     func stop() {
+        revision += 1
         packObserver.stop()
         permissionTimer?.invalidate(); refreshWork?.cancel(); reader.cancel(); tracker.stop()
     }
@@ -243,7 +246,11 @@ final class AppModel: ObservableObject {
             try onToggleShortcutChange?(toggleShortcutEnabled ? toggleShortcut : nil)
             toggleShortcutRegistered = toggleShortcutEnabled
             toggleShortcutError = nil
-        } catch { toggleShortcutRegistered = false; toggleShortcutError = error.localizedDescription }
+        } catch {
+            if toggleShortcutRegistered { try? onToggleShortcutChange?(nil) }
+            toggleShortcutRegistered = false
+            toggleShortcutError = error.localizedDescription
+        }
     }
     @discardableResult
     func updateToggleShortcut(_ text: String, enabled: Bool = true) -> Bool {
@@ -276,8 +283,12 @@ final class AppModel: ObservableObject {
     }
     func activateNavigationShortcuts() {
         for action in NavigationAction.allCases {
-            _ = updateNavigationShortcut(action, text: KeySequence.editable([navigationShortcuts[action]!.chord]),
-                                         enabled: navigationEnabled[action] == true)
+            let registered = updateNavigationShortcut(action, text: KeySequence.editable([navigationShortcuts[action]!.chord]),
+                                                       enabled: navigationEnabled[action] == true)
+            if !registered, navigationRegistered.contains(action) {
+                try? onNavigationShortcutChange?(action, nil)
+                navigationRegistered.remove(action)
+            }
         }
     }
     @discardableResult
@@ -320,6 +331,36 @@ final class AppModel: ObservableObject {
         refreshWork = work
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: work)
     }
+    func requestDeepScan() {
+        guard let context = activeApp, hasPermission else { return }
+        if NSWorkspace.shared.frontmostApplication?.processIdentifier == context.pid {
+            refresh(deep: true)
+            return
+        }
+        guard let app = NSRunningApplication(processIdentifier: context.pid),
+              app.activate(options: .activateIgnoringOtherApps) else {
+            error = "대상 앱으로 전환하지 못했습니다. 앱을 실행한 뒤 다시 시도해 주세요."
+            return
+        }
+        refreshWork?.cancel(); reader.cancel(); revision += 1
+        let request = revision
+        deepScanInFlight = true; isLoading = true
+        // Activation is asynchronous. Wait briefly for the target, without
+        // fighting another app switch or allowing a normal refresh to interrupt.
+        Task { @MainActor [weak self] in
+            for _ in 0..<20 {
+                guard let self, self.revision == request else { return }
+                if NSWorkspace.shared.frontmostApplication?.processIdentifier == context.pid {
+                    self.refresh(deep: true)
+                    return
+                }
+                try? await Task.sleep(nanoseconds: 50_000_000)
+            }
+            guard let self, self.revision == request else { return }
+            self.deepScanInFlight = false; self.isLoading = false
+            self.error = "대상 앱이 활성화되지 않아 메뉴 읽기를 중지했습니다. 다시 시도해 주세요."
+        }
+    }
     func refresh(deep: Bool = false) {
         guard let context = activeApp, hasPermission else { isLoading = false; return }
         refreshWork?.cancel()
@@ -341,7 +382,7 @@ final class AppModel: ObservableObject {
                     if self.menuCache.count >= 32 { self.menuCache.removeAll() }
                     self.menuCache[context.cacheKey] = result
                     if AppScope.isValid(context.bundleIdentifier) {
-                        self.commit {
+                        self.commit(clearError: false) {
                             $0.rememberApp(bundleIdentifier: context.bundleIdentifier, name: context.name,
                                 entries: result.entries, partial: result.state == .partial)
                         }
@@ -362,6 +403,7 @@ final class AppModel: ObservableObject {
         do {
             let pack = try AppShortcutPack.read(url)
             try packStorage.install(pack)
+            error = nil
             reloadPacks()
             selectTab("saved:" + pack.bundleIdentifier)
         } catch { self.error = "단축키 팩을 가져오지 못했습니다.\n\(error.localizedDescription)" }
@@ -434,15 +476,18 @@ final class AppModel: ObservableObject {
         commit { $0.entries.removeAll { $0.id == entry.id } }
     }
     @discardableResult
-    private func commit(_ change: (inout LibraryDocument) -> Void) -> Bool {
+    private func commit(clearError: Bool = true, _ change: (inout LibraryDocument) -> Void) -> Bool {
         guard !storageNeedsRecovery else {
             error = "기존 목록을 보존하기 위해 저장을 중지했습니다. 설정에서 복구해 주세요."
             return false
         }
         var next = library
         change(&next)
-        guard next != library else { return true }
-        do { try storage.save(next); library = next; return true }
+        do {
+            if next != library { try storage.save(next); library = next }
+            if clearError { error = nil }
+            return true
+        }
         catch { self.error = "변경 사항을 저장하지 못했습니다.\n\(error.localizedDescription)"; return false }
     }
     func importLibrary(from url: URL) {
@@ -453,7 +498,7 @@ final class AppModel: ObservableObject {
         } catch { self.error = "목록을 가져오지 못했습니다.\n\(error.localizedDescription)" }
     }
     func exportLibrary(to url: URL) {
-        do { try LibraryStorage(url: url).save(library) }
+        do { try LibraryStorage(url: url).save(library); error = nil }
         catch { self.error = "목록을 내보내지 못했습니다.\n\(error.localizedDescription)" }
     }
     func recoverLibrary() {

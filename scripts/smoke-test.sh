@@ -42,6 +42,8 @@ assert report["savedSafariCount"] == 31, report
 for key in ["nonactivatingPanel", "didNotActivate", "didNotBecomeKey", "floating",
             "startupPackPrefixConflictRejected", "startupBundledPacksLoaded", "packConflictKeepsPreviousShortcut",
             "navigationPackPrefixConflictRejected",
+            "hotReloadUnregistersConflictingKeys", "removingPackRestoresConfiguredKeys",
+            "successfulSaveClearsError", "unchangedSuccessfulSaveClearsError",
             "persistedFavorite", "persistedLearned", "learnedHidden",
             "activeAppDetected", "activeAppMatchesWorkspace",
             "globalHotKeyRegistered", "hotKeyHides", "hotKeyShows", "hotKeyRepeatIgnored",

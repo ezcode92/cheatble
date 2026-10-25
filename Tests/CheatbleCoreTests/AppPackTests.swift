@@ -21,6 +21,19 @@ struct AppPackTests {
         #expect(!entries.contains { entry in NavigationAction.allCases.contains { entry.sequence == [$0.standard.chord] } })
     }
 
+    @Test func oversizedInvalidPackDoesNotHideValidPacks() throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("cheatble-pack-\(UUID())")
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let storage = AppPackStorage(directory: directory)
+        let valid = AppShortcutPack.example
+        try storage.install(valid)
+        try Data(repeating: 32, count: 10_000_001).write(to: directory.appendingPathComponent("a-invalid.json"))
+        let loaded = storage.load()
+        #expect(loaded.packs == [valid])
+        #expect(loaded.issues.count == 1)
+        #expect(loaded.issues[0].contains("a-invalid.json"))
+    }
+
     @Test func malformedPackCannotOverwriteInstalledDataOrEscapeDirectory() throws {
         let directory = FileManager.default.temporaryDirectory.appendingPathComponent("cheatble-pack-\(UUID())")
         defer { try? FileManager.default.removeItem(at: directory) }

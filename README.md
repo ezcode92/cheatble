@@ -2,7 +2,7 @@
 
 [English](README.md) · [한국어](README.ko.md)
 
-**Version 1.0** — A free, local macOS shortcut reference that stays beside your work. Follow the active app, browse macOS shortcuts, or pin a saved app's list. No server, account, subscription, or external package dependencies.
+**Version 1.0.1** — A free, local macOS shortcut reference that stays beside your work. Follow the active app, browse macOS shortcuts, or pin a saved app's list. No server, account, subscription, or external package dependencies.
 
 Requires **macOS 13 or later**. The current app interface and bundled shortcut descriptions are in Korean.
 
@@ -42,6 +42,8 @@ In the dropdown, type an app name to search, use **arrow keys** to move, **Retur
 
 Use your left hand for the modifiers and your right hand for the final key. Each shortcut can be changed or disabled in settings. Cheatble checks known shortcut lists and system registration conflicts; it cannot detect every app's internal shortcuts.
 
+If a newly loaded pack conflicts with a configured hotkey, that hotkey is temporarily unregistered and settings show the conflict. Removing the conflicting pack restores the hotkey without changing your saved key combination.
+
 ### Move, resize, and adjust opacity
 
 - Drag the **CHEATBLE header** to move the sheet. Its position is saved.
@@ -56,7 +58,7 @@ Use your left hand for the modifiers and your right hand for the final key. Each
 - Click a category header to collapse or expand it. Click a shortcut row to reveal its description, **favorite**, **learned**, and **pencil/edit** controls.
 - Use **설정 → 앱별 단축키 설정** to add, edit, or remove custom entries. Removing an override restores the original menu or bundled value. Editing a reference does not change the shortcut in the target app.
 - Settings can import/export custom entries, saved menus, favorites, learned marks, and collapsed groups as JSON. Import merges data; imported custom entries replace matching custom entries. Shortcut packs are stored separately.
-- **메뉴 더 읽기** briefly opens the target app's menus to discover lazily created items. Normal refresh does not open menus or execute commands.
+- **메뉴 더 읽기** switches to the target app and briefly opens its menus to discover lazily created items. Normal refresh does not open menus or execute commands.
 
 Key symbols: `⌘` Command · `⌥` Option · `⌃` Control · `⇧` Shift · `⇥` Tab · `↩` Return · `⌫` Delete. Press keys within one combination together. For `Control+B → C`, release the first combination before pressing the next key. Enter arrow keys as `Left`, `Right`, `Up`, or `Down`, and the plus key as `Plus`.
 

@@ -149,8 +149,8 @@ struct SettingsView: View {
         .onAppear { toggleKeys = KeySequence.editable([model.toggleShortcut.chord]) }
         .onChange(of: model.toggleShortcut) { toggleKeys = KeySequence.editable([$0.chord]) }
         .confirmationDialog("메뉴 더 읽기", isPresented: $showDeepScanConfirmation, titleVisibility: .visible) {
-            Button("메뉴를 잠시 열어 읽기") { model.refresh(deep: true) }
-        } message: { Text("현재 앱의 메뉴를 잠시 열었다 닫아 숨겨진 단축키를 찾습니다. 메뉴 명령은 실행하지 않습니다.") }
+            Button("메뉴를 잠시 열어 읽기") { model.requestDeepScan() }
+        } message: { Text("대상 앱으로 전환한 뒤 메뉴를 잠시 열었다 닫아 숨겨진 단축키를 찾습니다. 메뉴 명령은 실행하지 않습니다.") }
         .confirmationDialog("모든 익힘 표시를 지울까요?", isPresented: $confirmReset, titleVisibility: .visible) {
             Button("익힘 표시 초기화", role: .destructive) { model.resetLearned() }
         } message: { Text("숨겨졌던 단축키가 다시 나타납니다. 단축키와 즐겨찾기는 유지됩니다.") }

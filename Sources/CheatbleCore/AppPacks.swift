@@ -126,13 +126,14 @@ public struct AppPackStorage {
             var scopes = Set<String>()
             for file in files.prefix(128) {
                 do {
-                    totalSize += try file.resourceValues(forKeys: [.fileSizeKey]).fileSize ?? 0
-                    guard totalSize <= 10_000_000 else { result.issues.append("팩 전체 크기가 10MB를 넘었습니다."); break }
+                    let size = try file.resourceValues(forKeys: [.fileSizeKey]).fileSize ?? 0
                     let pack = try AppShortcutPack.read(file)
                     guard scopes.insert(pack.bundleIdentifier).inserted else {
                         result.issues.append("\(file.lastPathComponent): 같은 앱의 팩이 중복되어 있습니다.")
                         continue
                     }
+                    guard totalSize + size <= 10_000_000 else { result.issues.append("팩 전체 크기가 10MB를 넘었습니다."); break }
+                    totalSize += size
                     result.packs.append(pack)
                 } catch { result.issues.append("\(file.lastPathComponent): \(error.localizedDescription)") }
             }
