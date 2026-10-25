@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.microsoft.Powerpoint",
+  "appName": "PowerPoint",
+  "shortcuts": [
+    {
+      "id": "new",
+      "title": "새 프레젠테이션",
+      "category": "파일",
+      "keys": "Command+N",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "open",
+      "title": "프레젠테이션 열기",
+      "category": "파일",
+      "keys": "Command+O",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "save",
+      "title": "저장",
+      "category": "파일",
+      "keys": "Command+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "saveAs",
+      "title": "다른 이름으로 저장",
+      "category": "파일",
+      "keys": "Command+Shift+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "print",
+      "title": "인쇄",
+      "category": "파일",
+      "keys": "Command+P",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "close",
+      "title": "프레젠테이션 닫기",
+      "category": "파일",
+      "keys": "Command+W",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "copy",
+      "title": "복사",
+      "category": "편집",
+      "keys": "Command+C",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "cut",
+      "title": "잘라내기",
+      "category": "편집",
+      "keys": "Command+X",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "paste",
+      "title": "붙여넣기",
+      "category": "편집",
+      "keys": "Command+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "undo",
+      "title": "실행 취소",
+      "category": "편집",
+      "keys": "Command+Z",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "redo",
+      "title": "다시 실행",
+      "category": "편집",
+      "keys": "Command+Y",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "newSlide",
+      "title": "새 슬라이드",
+      "category": "슬라이드",
+      "keys": "Command+Shift+N",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "duplicateSlide",
+      "title": "슬라이드 복제",
+      "category": "슬라이드",
+      "keys": "Command+Shift+D",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "nextSlide",
+      "title": "다음 슬라이드",
+      "category": "슬라이드",
+      "keys": "PageDown",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "previousSlide",
+      "title": "이전 슬라이드",
+      "category": "슬라이드",
+      "keys": "PageUp",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "normalView",
+      "title": "기본 보기",
+      "category": "보기",
+      "keys": "Command+1",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "sorterView",
+      "title": "여러 슬라이드 보기",
+      "category": "보기",
+      "keys": "Command+2",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "notesView",
+      "title": "슬라이드 노트 보기",
+      "category": "보기",
+      "keys": "Command+3",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "startShow",
+      "title": "슬라이드 쇼 시작",
+      "category": "발표",
+      "keys": "Command+Shift+Return",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "endShow",
+      "title": "슬라이드 쇼 종료",
+      "category": "발표",
+      "keys": "Escape",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "duplicateObject",
+      "title": "개체 복제",
+      "category": "개체",
+      "keys": "Control+D",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "group",
+      "title": "개체 그룹화",
+      "category": "개체",
+      "keys": "Command+Option+G",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "ungroup",
+      "title": "그룹 해제",
+      "category": "개체",
+      "keys": "Command+Option+Shift+G",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "bringFront",
+      "title": "맨 앞으로 가져오기",
+      "category": "개체",
+      "keys": "Command+Shift+F",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "sendBack",
+      "title": "맨 뒤로 보내기",
+      "category": "개체",
+      "keys": "Command+Shift+B",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "formatObject",
+      "title": "개체 서식",
+      "category": "개체",
+      "keys": "Command+Shift+1",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "copyFormat",
+      "title": "서식 복사",
+      "category": "개체",
+      "keys": "Command+Shift+C",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "pasteFormat",
+      "title": "서식 붙여넣기",
+      "category": "개체",
+      "keys": "Command+Shift+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "bold",
+      "title": "굵게",
+      "category": "문자 서식",
+      "keys": "Command+B",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "italic",
+      "title": "기울임",
+      "category": "문자 서식",
+      "keys": "Command+I",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "underline",
+      "title": "밑줄",
+      "category": "문자 서식",
+      "keys": "Command+U",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "font",
+      "title": "글꼴 설정",
+      "category": "문자 서식",
+      "keys": "Command+T",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "left",
+      "title": "왼쪽 정렬",
+      "category": "단락",
+      "keys": "Command+L",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "center",
+      "title": "가운데 정렬",
+      "category": "단락",
+      "keys": "Command+E",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "right",
+      "title": "오른쪽 정렬",
+      "category": "단락",
+      "keys": "Command+R",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "justify",
+      "title": "양쪽 맞춤",
+      "category": "단락",
+      "keys": "Command+J",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "hyperlink",
+      "title": "하이퍼링크 삽입",
+      "category": "삽입",
+      "keys": "Command+K",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "comment",
+      "title": "메모 삽입",
+      "category": "삽입",
+      "keys": "Command+Shift+M",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "find",
+      "title": "프레젠테이션에서 찾기",
+      "category": "찾기",
+      "keys": "Command+F",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    },
+    {
+      "id": "replace",
+      "title": "찾기 및 바꾸기",
+      "category": "찾기",
+      "keys": "Command+Shift+H",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/powerpoint/use-keyboard-shortcuts-to-create-powerpoint-presentations"
+    }
+  ]
+}

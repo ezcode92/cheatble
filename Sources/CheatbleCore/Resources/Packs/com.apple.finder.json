@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.apple.finder",
+  "appName": "Finder",
+  "shortcuts": [
+    {
+      "id": "finder.newWindow",
+      "title": "새 Finder 창",
+      "category": "창·보기",
+      "keys": "Command+N",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "New Finder Window",
+        "새로운 Finder 윈도우"
+      ]
+    },
+    {
+      "id": "finder.find",
+      "title": "파일 검색",
+      "category": "창·보기",
+      "keys": "Command+F",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Find",
+        "찾기"
+      ]
+    },
+    {
+      "id": "finder.viewOptions",
+      "title": "보기 옵션",
+      "category": "창·보기",
+      "keys": "Command+J",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Show View Options",
+        "보기 옵션 보기"
+      ]
+    },
+    {
+      "id": "finder.statusBar",
+      "title": "상태 막대 전환",
+      "category": "창·보기",
+      "keys": "Command+/",
+      "sourceURL": "https://support.apple.com/en-us/102650"
+    },
+    {
+      "id": "finder.sidebar",
+      "title": "사이드바 전환",
+      "category": "창·보기",
+      "keys": "Option+Command+S",
+      "sourceURL": "https://support.apple.com/en-us/102650"
+    },
+    {
+      "id": "finder.computer",
+      "title": "컴퓨터 열기",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+C",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Computer",
+        "컴퓨터"
+      ]
+    },
+    {
+      "id": "finder.recents",
+      "title": "최근 항목",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+F",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Recents",
+        "최근 항목"
+      ]
+    },
+    {
+      "id": "finder.icloud",
+      "title": "iCloud Drive",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+I",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "iCloud Drive"
+      ]
+    },
+    {
+      "id": "finder.network",
+      "title": "네트워크",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+K",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Network",
+        "네트워크"
+      ]
+    },
+    {
+      "id": "finder.documents",
+      "title": "문서 폴더",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+O",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Documents",
+        "문서"
+      ]
+    },
+    {
+      "id": "finder.airdrop",
+      "title": "AirDrop",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+R",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "AirDrop"
+      ]
+    },
+    {
+      "id": "finder.utilities",
+      "title": "유틸리티 폴더",
+      "category": "폴더 이동",
+      "keys": "Command+Shift+U",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Utilities",
+        "유틸리티"
+      ]
+    },
+    {
+      "id": "finder.server",
+      "title": "서버에 연결",
+      "category": "폴더 이동",
+      "keys": "Command+K",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Connect to Server",
+        "서버에 연결"
+      ]
+    },
+    {
+      "id": "finder.smartFolder",
+      "title": "새 스마트 폴더",
+      "category": "파일·폴더",
+      "keys": "Option+Command+N",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "New Smart Folder",
+        "새로운 스마트 폴더"
+      ]
+    },
+    {
+      "id": "finder.alias",
+      "title": "가상본 만들기",
+      "category": "파일·폴더",
+      "keys": "Control+Command+A",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "aliases": [
+        "Make Alias",
+        "가상본 만들기"
+      ]
+    },
+    {
+      "id": "finder.original",
+      "title": "가상본의 원본 보기",
+      "category": "파일·폴더",
+      "keys": "Command+R",
+      "sourceURL": "https://support.apple.com/en-us/102650",
+      "detail": "가상본을 선택한 상태에서 사용합니다.",
+      "aliases": [
+        "Show Original",
+        "원본 보기"
+      ]
+    },
+    {
+      "id": "finder.parentNew",
+      "title": "상위 폴더를 새 창에서",
+      "category": "폴더 이동",
+      "keys": "Control+Command+Up",
+      "sourceURL": "https://support.apple.com/en-us/102650"
+    },
+    {
+      "id": "finder.slideshow",
+      "title": "선택 파일 슬라이드쇼",
+      "category": "창·보기",
+      "keys": "Option+Command+Y",
+      "sourceURL": "https://support.apple.com/en-us/102650"
+    }
+  ]
+}

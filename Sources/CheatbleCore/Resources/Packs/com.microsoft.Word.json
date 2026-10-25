@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.microsoft.Word",
+  "appName": "Word",
+  "shortcuts": [
+    {
+      "id": "new",
+      "title": "새 문서",
+      "category": "파일",
+      "keys": "Command+N",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "open",
+      "title": "문서 열기",
+      "category": "파일",
+      "keys": "Command+O",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "save",
+      "title": "저장",
+      "category": "파일",
+      "keys": "Command+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "saveAs",
+      "title": "다른 이름으로 저장",
+      "category": "파일",
+      "keys": "Command+Shift+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "print",
+      "title": "인쇄",
+      "category": "파일",
+      "keys": "Command+P",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "undo",
+      "title": "실행 취소",
+      "category": "편집",
+      "keys": "Command+Z",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "redo",
+      "title": "다시 실행",
+      "category": "편집",
+      "keys": "Command+Y",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "cut",
+      "title": "잘라내기",
+      "category": "편집",
+      "keys": "Command+X",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "copy",
+      "title": "복사",
+      "category": "편집",
+      "keys": "Command+C",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "paste",
+      "title": "붙여넣기",
+      "category": "편집",
+      "keys": "Command+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "pasteText",
+      "title": "텍스트만 붙여넣기",
+      "category": "편집",
+      "keys": "Command+Shift+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "find",
+      "title": "문서에서 찾기",
+      "category": "찾기",
+      "keys": "Command+F",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "replace",
+      "title": "찾기 및 바꾸기",
+      "category": "찾기",
+      "keys": "Control+H",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "bold",
+      "title": "굵게",
+      "category": "문자 서식",
+      "keys": "Command+B",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "italic",
+      "title": "기울임",
+      "category": "문자 서식",
+      "keys": "Command+I",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "underline",
+      "title": "밑줄",
+      "category": "문자 서식",
+      "keys": "Command+U",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "strike",
+      "title": "취소선",
+      "category": "문자 서식",
+      "keys": "Command+Shift+X",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "font",
+      "title": "글꼴 설정",
+      "category": "문자 서식",
+      "keys": "Command+D",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "left",
+      "title": "왼쪽 정렬",
+      "category": "단락",
+      "keys": "Command+L",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "center",
+      "title": "가운데 정렬",
+      "category": "단락",
+      "keys": "Command+E",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "right",
+      "title": "오른쪽 정렬",
+      "category": "단락",
+      "keys": "Command+R",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "justify",
+      "title": "양쪽 맞춤",
+      "category": "단락",
+      "keys": "Command+J",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "singleSpacing",
+      "title": "줄 간격 1줄",
+      "category": "단락",
+      "keys": "Command+1",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "doubleSpacing",
+      "title": "줄 간격 2줄",
+      "category": "단락",
+      "keys": "Command+2",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "oneHalfSpacing",
+      "title": "줄 간격 1.5줄",
+      "category": "단락",
+      "keys": "Command+5",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "heading1",
+      "title": "제목 1",
+      "category": "스타일",
+      "keys": "Command+Option+1",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "heading2",
+      "title": "제목 2",
+      "category": "스타일",
+      "keys": "Command+Option+2",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "heading3",
+      "title": "제목 3",
+      "category": "스타일",
+      "keys": "Command+Option+3",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "pageBreak",
+      "title": "페이지 나누기",
+      "category": "삽입",
+      "keys": "Command+Return",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "lineBreak",
+      "title": "줄바꿈",
+      "category": "삽입",
+      "keys": "Shift+Return",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "comment",
+      "title": "메모 삽입",
+      "category": "검토",
+      "keys": "Command+Option+A",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "trackChanges",
+      "title": "변경 내용 추적 전환",
+      "category": "검토",
+      "keys": "Command+Shift+E",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "copyFormat",
+      "title": "서식 복사",
+      "category": "문자 서식",
+      "keys": "Command+Option+C",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "pasteFormat",
+      "title": "서식 붙여넣기",
+      "category": "문자 서식",
+      "keys": "Command+Option+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "goTo",
+      "title": "이동 창",
+      "category": "찾기",
+      "keys": "Command+Option+G",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    },
+    {
+      "id": "spelling",
+      "title": "맞춤법 및 문법 검사",
+      "category": "검토",
+      "keys": "Command+Option+L",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/word/keyboard-shortcuts-in-word"
+    }
+  ]
+}

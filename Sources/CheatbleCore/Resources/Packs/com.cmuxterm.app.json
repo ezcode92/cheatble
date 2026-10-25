@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.cmuxterm.app",
+  "appName": "cmux",
+  "shortcuts": [
+    {
+      "id": "cmux.palette",
+      "title": "명령 팔레트",
+      "category": "앱",
+      "keys": "Command+Shift+P",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "Command Palette"
+      ]
+    },
+    {
+      "id": "cmux.settings",
+      "title": "설정",
+      "category": "앱",
+      "keys": "Command+,",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "Settings"
+      ]
+    },
+    {
+      "id": "cmux.reloadConfig",
+      "title": "설정 다시 읽기",
+      "category": "앱",
+      "keys": "Command+Shift+,",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "Reload Configuration"
+      ]
+    },
+    {
+      "id": "cmux.toggle",
+      "title": "전체 cmux 창 표시 전환",
+      "category": "앱",
+      "keys": "Control+Option+Command+.",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "cmux의 전역 단축키 기본값입니다."
+    },
+    {
+      "id": "cmux.search",
+      "title": "전체 검색",
+      "category": "앱",
+      "keys": "Option+Command+F",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "cmux가 활성화되어 있을 때"
+    },
+    {
+      "id": "cmux.newWindow",
+      "title": "새 창",
+      "category": "앱",
+      "keys": "Command+Shift+N",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "New Window"
+      ]
+    },
+    {
+      "id": "cmux.closeWindow",
+      "title": "창 닫기",
+      "category": "앱",
+      "keys": "Control+Command+W",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "Close Window"
+      ]
+    },
+    {
+      "id": "cmux.fullscreen",
+      "title": "전체 화면 전환",
+      "category": "앱",
+      "keys": "Control+Command+F",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.sidebar",
+      "title": "왼쪽 사이드바",
+      "category": "작업 공간",
+      "keys": "Command+B",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.fileSidebar",
+      "title": "오른쪽 사이드바",
+      "category": "작업 공간",
+      "keys": "Option+Command+B",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.newWorkspace",
+      "title": "새 작업 공간",
+      "category": "작업 공간",
+      "keys": "Command+N",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "aliases": [
+        "New Workspace"
+      ]
+    },
+    {
+      "id": "cmux.workspaceList",
+      "title": "작업 공간 선택",
+      "category": "작업 공간",
+      "keys": "Command+P",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.nextWorkspace",
+      "title": "다음 작업 공간",
+      "category": "작업 공간",
+      "keys": "Control+Command+]",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.previousWorkspace",
+      "title": "이전 작업 공간",
+      "category": "작업 공간",
+      "keys": "Control+Command+[",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.workspace1",
+      "title": "1번 작업 공간",
+      "category": "작업 공간",
+      "keys": "Command+1",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "Command+1–9로 해당 작업 공간을 선택합니다."
+    },
+    {
+      "id": "cmux.renameWorkspace",
+      "title": "작업 공간 이름 변경",
+      "category": "작업 공간",
+      "keys": "Command+Shift+R",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.closeWorkspace",
+      "title": "작업 공간 닫기",
+      "category": "작업 공간",
+      "keys": "Command+Shift+W",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.newSurface",
+      "title": "새 터미널 탭",
+      "category": "탭",
+      "keys": "Command+T",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "패널 안의 탭(surface)을 만듭니다."
+    },
+    {
+      "id": "cmux.nextSurface",
+      "title": "다음 탭",
+      "category": "탭",
+      "keys": "Command+Shift+]",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.previousSurface",
+      "title": "이전 탭",
+      "category": "탭",
+      "keys": "Command+Shift+[",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.surface1",
+      "title": "1번 탭",
+      "category": "탭",
+      "keys": "Control+1",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "Control+1–9로 해당 탭을 선택합니다."
+    },
+    {
+      "id": "cmux.renameTab",
+      "title": "터미널 탭 이름 변경",
+      "category": "탭",
+      "keys": "Command+R",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "터미널 탭에서 사용합니다. 브라우저 패널에서는 페이지 새로고침입니다."
+    },
+    {
+      "id": "cmux.closeTab",
+      "title": "탭 닫기",
+      "category": "탭",
+      "keys": "Command+W",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.reopen",
+      "title": "마지막으로 닫은 항목 복원",
+      "category": "탭",
+      "keys": "Command+Shift+T",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.copyMode",
+      "title": "터미널 복사 모드",
+      "category": "탭",
+      "keys": "Command+Shift+M",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.clear",
+      "title": "화면 지우기",
+      "category": "탭",
+      "keys": "Command+Shift+K",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "스크롤 기록은 유지합니다."
+    },
+    {
+      "id": "cmux.splitRight",
+      "title": "좌우로 분할",
+      "category": "패널",
+      "keys": "Command+D",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.splitDown",
+      "title": "위아래로 분할",
+      "category": "패널",
+      "keys": "Command+Shift+D",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.focusLeft",
+      "title": "왼쪽 패널",
+      "category": "패널",
+      "keys": "Option+Command+Left",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.focusRight",
+      "title": "오른쪽 패널",
+      "category": "패널",
+      "keys": "Option+Command+Right",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.focusUp",
+      "title": "위쪽 패널",
+      "category": "패널",
+      "keys": "Option+Command+Up",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.focusDown",
+      "title": "아래쪽 패널",
+      "category": "패널",
+      "keys": "Option+Command+Down",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.zoom",
+      "title": "패널 확대 전환",
+      "category": "패널",
+      "keys": "Command+Shift+Return",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.resizeLeft",
+      "title": "왼쪽으로 크기 조절",
+      "category": "패널",
+      "keys": "Control+Shift+H",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.resizeDown",
+      "title": "아래쪽으로 크기 조절",
+      "category": "패널",
+      "keys": "Control+Shift+J",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.resizeUp",
+      "title": "위쪽으로 크기 조절",
+      "category": "패널",
+      "keys": "Control+Shift+K",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.resizeRight",
+      "title": "오른쪽으로 크기 조절",
+      "category": "패널",
+      "keys": "Control+Shift+L",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.browser",
+      "title": "브라우저 열기",
+      "category": "브라우저",
+      "keys": "Command+Shift+L",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts"
+    },
+    {
+      "id": "cmux.address",
+      "title": "주소창 선택",
+      "category": "브라우저",
+      "keys": "Command+L",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "브라우저 패널에서"
+    },
+    {
+      "id": "cmux.browserBack",
+      "title": "이전 페이지",
+      "category": "브라우저",
+      "keys": "Command+[",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "브라우저 패널에서. 터미널에서는 이전 포커스 위치로 이동합니다."
+    },
+    {
+      "id": "cmux.browserForward",
+      "title": "다음 페이지",
+      "category": "브라우저",
+      "keys": "Command+]",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "브라우저 패널에서. 터미널에서는 다음 포커스 위치로 이동합니다."
+    },
+    {
+      "id": "cmux.browserReload",
+      "title": "페이지 새로고침",
+      "category": "브라우저",
+      "keys": "Command+R",
+      "sourceURL": "https://cmux.com/docs/keyboard-shortcuts",
+      "detail": "브라우저 패널에서"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.microsoft.Excel",
+  "appName": "Excel",
+  "shortcuts": [
+    {
+      "id": "new",
+      "title": "새 통합 문서",
+      "category": "파일",
+      "keys": "Command+N",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "open",
+      "title": "통합 문서 열기",
+      "category": "파일",
+      "keys": "Command+O",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "save",
+      "title": "저장",
+      "category": "파일",
+      "keys": "Command+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "saveAs",
+      "title": "다른 이름으로 저장",
+      "category": "파일",
+      "keys": "Command+Shift+S",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "print",
+      "title": "인쇄",
+      "category": "파일",
+      "keys": "Command+P",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "close",
+      "title": "통합 문서 닫기",
+      "category": "파일",
+      "keys": "Command+W",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "copy",
+      "title": "복사",
+      "category": "편집",
+      "keys": "Command+C",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "cut",
+      "title": "잘라내기",
+      "category": "편집",
+      "keys": "Command+X",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "paste",
+      "title": "붙여넣기",
+      "category": "편집",
+      "keys": "Command+V",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "undo",
+      "title": "실행 취소",
+      "category": "편집",
+      "keys": "Command+Z",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "redo",
+      "title": "다시 실행",
+      "category": "편집",
+      "keys": "Command+Y",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "edit",
+      "title": "셀 편집",
+      "category": "셀",
+      "keys": "F2",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel",
+      "detail": "키보드 설정에 따라 Fn 키를 함께 누릅니다."
+    },
+    {
+      "id": "lineBreak",
+      "title": "셀 안에서 줄바꿈",
+      "category": "셀",
+      "keys": "Option+Return",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "clear",
+      "title": "내용 지우기",
+      "category": "셀",
+      "keys": "Delete",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "fillDown",
+      "title": "아래로 채우기",
+      "category": "셀",
+      "keys": "Command+D",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "fillRight",
+      "title": "오른쪽으로 채우기",
+      "category": "셀",
+      "keys": "Command+R",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "insertCells",
+      "title": "셀 삽입",
+      "category": "셀",
+      "keys": "Control+Shift+=",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "deleteCells",
+      "title": "셀 삭제",
+      "category": "셀",
+      "keys": "Command+-",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "selectRow",
+      "title": "행 전체 선택",
+      "category": "선택",
+      "keys": "Shift+Space",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "selectColumn",
+      "title": "열 전체 선택",
+      "category": "선택",
+      "keys": "Control+Space",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel",
+      "detail": "macOS 입력 소스 전환 설정과 겹칠 수 있습니다."
+    },
+    {
+      "id": "formatCells",
+      "title": "셀 서식",
+      "category": "서식",
+      "keys": "Command+1",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "bold",
+      "title": "굵게",
+      "category": "서식",
+      "keys": "Command+B",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "italic",
+      "title": "기울임",
+      "category": "서식",
+      "keys": "Command+I",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "underline",
+      "title": "밑줄",
+      "category": "서식",
+      "keys": "Command+U",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "strike",
+      "title": "취소선",
+      "category": "서식",
+      "keys": "Command+Shift+X",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "find",
+      "title": "찾기",
+      "category": "찾기",
+      "keys": "Command+F",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "replace",
+      "title": "바꾸기",
+      "category": "찾기",
+      "keys": "Control+H",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "goTo",
+      "title": "셀로 이동",
+      "category": "찾기",
+      "keys": "Control+G",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "calculate",
+      "title": "전체 통합 문서 계산",
+      "category": "수식",
+      "keys": "Command+=",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "autoSum",
+      "title": "자동 합계",
+      "category": "수식",
+      "keys": "Command+Shift+T",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "reference",
+      "title": "절대·상대 참조 전환",
+      "category": "수식",
+      "keys": "Command+T",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel",
+      "detail": "수식을 편집하며 참조를 선택한 상태에서 사용합니다."
+    },
+    {
+      "id": "formulaBuilder",
+      "title": "함수 삽입",
+      "category": "수식",
+      "keys": "Shift+F3",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "showFormulas",
+      "title": "수식 표시 전환",
+      "category": "수식",
+      "keys": "Control+`",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "filter",
+      "title": "필터 전환",
+      "category": "데이터",
+      "keys": "Command+Shift+F",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "sort",
+      "title": "정렬 창",
+      "category": "데이터",
+      "keys": "Command+Shift+R",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "table",
+      "title": "표 만들기",
+      "category": "데이터",
+      "keys": "Command+T",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel",
+      "detail": "셀 범위를 선택한 상태에서 사용합니다."
+    },
+    {
+      "id": "date",
+      "title": "현재 날짜 입력",
+      "category": "입력",
+      "keys": "Control+;",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "time",
+      "title": "현재 시간 입력",
+      "category": "입력",
+      "keys": "Command+;",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "hideRow",
+      "title": "행 숨기기",
+      "category": "행·열",
+      "keys": "Control+9",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    },
+    {
+      "id": "hideColumn",
+      "title": "열 숨기기",
+      "category": "행·열",
+      "keys": "Control+0",
+      "sourceURL": "https://support.microsoft.com/en-us/accessibility/excel/keyboard-shortcuts-in-excel"
+    }
+  ]
+}

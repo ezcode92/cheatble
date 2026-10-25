@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "com.apple.Safari",
+  "appName": "Safari",
+  "shortcuts": [
+    {
+      "id": "safari.find",
+      "title": "페이지에서 찾기",
+      "category": "페이지",
+      "keys": "Command+F",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Find",
+        "찾기"
+      ]
+    },
+    {
+      "id": "safari.print",
+      "title": "페이지 인쇄",
+      "category": "페이지",
+      "keys": "Command+P",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Print",
+        "프린트"
+      ]
+    },
+    {
+      "id": "safari.nextField",
+      "title": "다음 입력 항목",
+      "category": "페이지",
+      "keys": "Tab",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27"
+    },
+    {
+      "id": "safari.nextLink",
+      "title": "다음 링크·항목",
+      "category": "페이지",
+      "keys": "Option+Tab",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "고급 설정의 Tab 탐색 옵션에 따라 Tab과 역할이 바뀝니다."
+    },
+    {
+      "id": "safari.restoreAddress",
+      "title": "주소 입력 취소",
+      "category": "페이지",
+      "keys": "Escape",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "주소창에서 입력 중일 때 현재 페이지 주소를 복원합니다."
+    },
+    {
+      "id": "safari.overview",
+      "title": "탭 전체 보기",
+      "category": "탭",
+      "keys": "Command+Shift+\\",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Show Tab Overview",
+        "탭 개요 보기"
+      ]
+    },
+    {
+      "id": "safari.searchNewTab",
+      "title": "입력한 주소를 새 탭에서",
+      "category": "탭",
+      "keys": "Command+Return",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "주소창에 입력한 후 누릅니다. 탭 설정에 따라 새 창으로 열릴 수 있습니다."
+    },
+    {
+      "id": "safari.searchActiveTab",
+      "title": "새 탭에서 열고 이동",
+      "category": "탭",
+      "keys": "Command+Shift+Return",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "주소창에 입력한 후 누릅니다."
+    },
+    {
+      "id": "safari.firstTab",
+      "title": "첫 번째 탭",
+      "category": "탭",
+      "keys": "Command+1",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Command+1–8로 해당 탭을 선택합니다."
+    },
+    {
+      "id": "safari.closeTab",
+      "title": "현재 탭 닫기",
+      "category": "탭",
+      "keys": "Command+W",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Close Tab",
+        "탭 닫기"
+      ]
+    },
+    {
+      "id": "safari.home",
+      "title": "홈페이지",
+      "category": "설정",
+      "keys": "Command+Shift+H",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Home",
+        "홈"
+      ]
+    },
+    {
+      "id": "safari.settings",
+      "title": "Safari 설정",
+      "category": "설정",
+      "keys": "Command+,",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "aliases": [
+        "Settings",
+        "설정"
+      ]
+    },
+    {
+      "id": "safari.zoomIn",
+      "title": "페이지 확대",
+      "category": "페이지",
+      "keys": "Command+Plus",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27"
+    },
+    {
+      "id": "safari.zoomOut",
+      "title": "페이지 축소",
+      "category": "페이지",
+      "keys": "Command+-",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27"
+    },
+    {
+      "id": "safari.nextWindow",
+      "title": "다른 Safari 창",
+      "category": "탭",
+      "keys": "Command+`",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27"
+    }
+  ]
+}

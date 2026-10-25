@@ -1,0 +1,2861 @@
+[
+  {
+    "id": "5:macOSedit.copy",
+    "scope": "macOS",
+    "actionID": "edit.copy",
+    "title": "복사",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "C"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Copy",
+      "복사하기"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.paste",
+    "scope": "macOS",
+    "actionID": "edit.paste",
+    "title": "붙여넣기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Paste"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.cut",
+    "scope": "macOS",
+    "actionID": "edit.cut",
+    "title": "잘라내기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "X"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Cut"
+    ],
+    "menuPath": [],
+    "detail": "텍스트 편집 등 지원하는 앱에서 사용합니다. Finder 파일 이동은 ⌘C 다음 ⌥⌘V입니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.undo",
+    "scope": "macOS",
+    "actionID": "edit.undo",
+    "title": "실행 취소",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Z"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Undo"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.redo",
+    "scope": "macOS",
+    "actionID": "edit.redo",
+    "title": "다시 실행",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "Z"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Redo"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.selectAll",
+    "scope": "macOS",
+    "actionID": "edit.selectAll",
+    "title": "모두 선택",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "A"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Select All"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfile.save",
+    "scope": "macOS",
+    "actionID": "file.save",
+    "title": "저장",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "S"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Save"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.find",
+    "scope": "macOS",
+    "actionID": "edit.find",
+    "title": "찾기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "F"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Find"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.findNext",
+    "scope": "macOS",
+    "actionID": "edit.findNext",
+    "title": "다음 찾기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "G"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Find Next"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSedit.findPrevious",
+    "scope": "macOS",
+    "actionID": "edit.findPrevious",
+    "title": "이전 찾기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "G"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Find Previous"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfile.open",
+    "scope": "macOS",
+    "actionID": "file.open",
+    "title": "열기",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "O"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Open"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfile.print",
+    "scope": "macOS",
+    "actionID": "file.print",
+    "title": "프린트",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "P"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Print"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.settings",
+    "scope": "macOS",
+    "actionID": "app.settings",
+    "title": "앱 설정",
+    "category": "매일 쓰는 기본",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": ","
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Settings",
+      "Preferences"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.switch",
+    "scope": "macOS",
+    "actionID": "app.switch",
+    "title": "앱 전환",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Switch Apps"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.switchPrevious",
+    "scope": "macOS",
+    "actionID": "app.switchPrevious",
+    "title": "반대 방향으로 앱 전환",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSwindow.next",
+    "scope": "macOS",
+    "actionID": "window.next",
+    "title": "같은 앱의 다음 창",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "`"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "키보드 배열에 따라 억음 악센트 키 위치가 다릅니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSwindow.close",
+    "scope": "macOS",
+    "actionID": "window.close",
+    "title": "창 또는 탭 닫기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "W"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Close Window",
+      "Close"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.quit",
+    "scope": "macOS",
+    "actionID": "app.quit",
+    "title": "앱 종료",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Q"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Quit"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.hide",
+    "scope": "macOS",
+    "actionID": "app.hide",
+    "title": "현재 앱 가리기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "H"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Hide"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.hideOthers",
+    "scope": "macOS",
+    "actionID": "app.hideOthers",
+    "title": "다른 앱 가리기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "H"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Hide Others"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSwindow.minimize",
+    "scope": "macOS",
+    "actionID": "window.minimize",
+    "title": "창 최소화",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "M"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Minimize"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSwindow.fullscreen",
+    "scope": "macOS",
+    "actionID": "window.fullscreen",
+    "title": "전체 화면 전환",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "command"
+        ],
+        "key": "F"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Enter Full Screen",
+      "Exit Full Screen"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSapp.forceQuit",
+    "scope": "macOS",
+    "actionID": "app.forceQuit",
+    "title": "강제 종료 창 열기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "Escape"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.missionControl",
+    "scope": "macOS",
+    "actionID": "system.missionControl",
+    "title": "열린 창 한눈에 보기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Up"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "Mission Control의 기본값입니다. 시스템 설정에서 바꿀 수 있습니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.appWindows",
+    "scope": "macOS",
+    "actionID": "system.appWindows",
+    "title": "현재 앱의 창 보기",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Down"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.spaceLeft",
+    "scope": "macOS",
+    "actionID": "system.spaceLeft",
+    "title": "왼쪽 데스크탑",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Left"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.spaceRight",
+    "scope": "macOS",
+    "actionID": "system.spaceRight",
+    "title": "오른쪽 데스크탑",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Right"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.dock",
+    "scope": "macOS",
+    "actionID": "system.dock",
+    "title": "Dock 표시 전환",
+    "category": "앱과 창",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.spotlight",
+    "scope": "macOS",
+    "actionID": "system.spotlight",
+    "title": "Spotlight 검색",
+    "category": "검색과 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "입력 소스 설정과 충돌하거나 다른 키로 변경되어 있을 수 있습니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.finderSearch",
+    "scope": "macOS",
+    "actionID": "system.finderSearch",
+    "title": "Finder 검색 창",
+    "category": "검색과 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.inputSource",
+    "scope": "macOS",
+    "actionID": "system.inputSource",
+    "title": "이전 입력 소스 선택",
+    "category": "검색과 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "키보드 설정의 입력 소스 단축키 기본값입니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.emoji",
+    "scope": "macOS",
+    "actionID": "system.emoji",
+    "title": "이모지와 기호",
+    "category": "검색과 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "command"
+        ],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.quickNote",
+    "scope": "macOS",
+    "actionID": "system.quickNote",
+    "title": "빠른 메모",
+    "category": "검색과 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "function"
+        ],
+        "key": "Q"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "fn 또는 지구본 키가 있는 키보드에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOScapture.screen",
+    "scope": "macOS",
+    "actionID": "capture.screen",
+    "title": "전체 화면 캡처",
+    "category": "화면 캡처",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "3"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOScapture.selection",
+    "scope": "macOS",
+    "actionID": "capture.selection",
+    "title": "선택 영역 캡처",
+    "category": "화면 캡처",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "4"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOScapture.window",
+    "scope": "macOS",
+    "actionID": "capture.window",
+    "title": "선택한 창 캡처",
+    "category": "화면 캡처",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "4"
+      },
+      {
+        "modifiers": [],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "그다음 캡처할 창을 클릭합니다. Esc로 취소합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOScapture.options",
+    "scope": "macOS",
+    "actionID": "capture.options",
+    "title": "캡처·화면 기록 도구",
+    "category": "화면 캡처",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "5"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOScapture.clipboard",
+    "scope": "macOS",
+    "actionID": "capture.clipboard",
+    "title": "선택 영역을 클립보드로",
+    "category": "화면 캡처",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "shift",
+          "command"
+        ],
+        "key": "4"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "파일 대신 클립보드에 복사합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.wordLeft",
+    "scope": "macOS",
+    "actionID": "text.wordLeft",
+    "title": "이전 단어로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option"
+        ],
+        "key": "Left"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.wordRight",
+    "scope": "macOS",
+    "actionID": "text.wordRight",
+    "title": "다음 단어로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option"
+        ],
+        "key": "Right"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.lineStart",
+    "scope": "macOS",
+    "actionID": "text.lineStart",
+    "title": "줄 시작으로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Left"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.lineEnd",
+    "scope": "macOS",
+    "actionID": "text.lineEnd",
+    "title": "줄 끝으로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Right"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.documentStart",
+    "scope": "macOS",
+    "actionID": "text.documentStart",
+    "title": "문서 처음으로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Up"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.documentEnd",
+    "scope": "macOS",
+    "actionID": "text.documentEnd",
+    "title": "문서 끝으로 이동",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Down"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.selectWordLeft",
+    "scope": "macOS",
+    "actionID": "text.selectWordLeft",
+    "title": "이전 단어까지 선택",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "shift"
+        ],
+        "key": "Left"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.selectWordRight",
+    "scope": "macOS",
+    "actionID": "text.selectWordRight",
+    "title": "다음 단어까지 선택",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "shift"
+        ],
+        "key": "Right"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.selectLineStart",
+    "scope": "macOS",
+    "actionID": "text.selectLineStart",
+    "title": "줄 시작까지 선택",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "Left"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.selectLineEnd",
+    "scope": "macOS",
+    "actionID": "text.selectLineEnd",
+    "title": "줄 끝까지 선택",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "Right"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.deleteWord",
+    "scope": "macOS",
+    "actionID": "text.deleteWord",
+    "title": "앞 단어 지우기",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option"
+        ],
+        "key": "Delete"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.deleteForward",
+    "scope": "macOS",
+    "actionID": "text.deleteForward",
+    "title": "뒤쪽 문자 지우기",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "function"
+        ],
+        "key": "Delete"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOStext.pasteStyle",
+    "scope": "macOS",
+    "actionID": "text.pasteStyle",
+    "title": "서식에 맞춰 붙여넣기",
+    "category": "텍스트 이동·선택",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "shift",
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Paste and Match Style"
+    ],
+    "menuPath": [],
+    "detail": "지원하는 앱에서 동작합니다. 앱별 키 조합이 다를 수 있습니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.newFolder",
+    "scope": "macOS",
+    "actionID": "finder.newFolder",
+    "title": "새 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "N"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "New Folder"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.go",
+    "scope": "macOS",
+    "actionID": "finder.go",
+    "title": "폴더 경로로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "G"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Go to Folder"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.home",
+    "scope": "macOS",
+    "actionID": "finder.home",
+    "title": "홈 폴더 열기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "H"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Home"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.downloads",
+    "scope": "macOS",
+    "actionID": "finder.downloads",
+    "title": "다운로드 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "L"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Downloads"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.desktop",
+    "scope": "macOS",
+    "actionID": "finder.desktop",
+    "title": "데스크탑 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Desktop"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.applications",
+    "scope": "macOS",
+    "actionID": "finder.applications",
+    "title": "응용 프로그램 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "A"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Applications"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.quickLook",
+    "scope": "macOS",
+    "actionID": "finder.quickLook",
+    "title": "선택 항목 미리 보기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Quick Look"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.info",
+    "scope": "macOS",
+    "actionID": "finder.info",
+    "title": "선택 항목 정보",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "I"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Get Info"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.rename",
+    "scope": "macOS",
+    "actionID": "finder.rename",
+    "title": "이름 바꾸기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [],
+        "key": "Return"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Rename"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.trash",
+    "scope": "macOS",
+    "actionID": "finder.trash",
+    "title": "휴지통으로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Delete"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Move to Trash"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.movePaste",
+    "scope": "macOS",
+    "actionID": "finder.movePaste",
+    "title": "복사한 파일 여기로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Move Item Here"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다. 먼저 Finder에서 파일을 ⌘C로 복사합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.hidden",
+    "scope": "macOS",
+    "actionID": "finder.hidden",
+    "title": "숨김 파일 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "."
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.pathBar",
+    "scope": "macOS",
+    "actionID": "finder.pathBar",
+    "title": "경로 막대 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "P"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Path Bar",
+      "Hide Path Bar"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSfinder.preview",
+    "scope": "macOS",
+    "actionID": "finder.preview",
+    "title": "미리보기 패널 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "P"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Preview",
+      "Hide Preview"
+    ],
+    "menuPath": [],
+    "detail": "Finder에서 사용합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.lock",
+    "scope": "macOS",
+    "actionID": "system.lock",
+    "title": "화면 잠그기",
+    "category": "잠금과 시스템",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "command"
+        ],
+        "key": "Q"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.logout",
+    "scope": "macOS",
+    "actionID": "system.logout",
+    "title": "로그아웃 확인 창",
+    "category": "잠금과 시스템",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "Q"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "확인 후 로그아웃합니다. 작업을 저장한 뒤 사용하세요.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "5:macOSsystem.accessibility",
+    "scope": "macOS",
+    "actionID": "system.accessibility",
+    "title": "손쉬운 사용 옵션",
+    "category": "잠금과 시스템",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "F5"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "F5가 기능 키로 설정되지 않았다면 fn 키도 필요할 수 있습니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.newFolder",
+    "scope": "com.apple.finder",
+    "actionID": "finder.newFolder",
+    "title": "새 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "N"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "New Folder"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.go",
+    "scope": "com.apple.finder",
+    "actionID": "finder.go",
+    "title": "폴더 경로로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "G"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Go to Folder"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.home",
+    "scope": "com.apple.finder",
+    "actionID": "finder.home",
+    "title": "홈 폴더 열기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "H"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Home"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.downloads",
+    "scope": "com.apple.finder",
+    "actionID": "finder.downloads",
+    "title": "다운로드 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "L"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Downloads"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.desktop",
+    "scope": "com.apple.finder",
+    "actionID": "finder.desktop",
+    "title": "데스크탑 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Desktop"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.applications",
+    "scope": "com.apple.finder",
+    "actionID": "finder.applications",
+    "title": "응용 프로그램 폴더",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "A"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Applications"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.quickLook",
+    "scope": "com.apple.finder",
+    "actionID": "finder.quickLook",
+    "title": "선택 항목 미리 보기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Quick Look"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.info",
+    "scope": "com.apple.finder",
+    "actionID": "finder.info",
+    "title": "선택 항목 정보",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "I"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Get Info"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.rename",
+    "scope": "com.apple.finder",
+    "actionID": "finder.rename",
+    "title": "이름 바꾸기",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [],
+        "key": "Return"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Rename"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.trash",
+    "scope": "com.apple.finder",
+    "actionID": "finder.trash",
+    "title": "휴지통으로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Delete"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Move to Trash"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.movePaste",
+    "scope": "com.apple.finder",
+    "actionID": "finder.movePaste",
+    "title": "복사한 파일 여기로 이동",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Move Item Here"
+    ],
+    "menuPath": [],
+    "detail": "먼저 Finder에서 파일을 ⌘C로 복사합니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.hidden",
+    "scope": "com.apple.finder",
+    "actionID": "finder.hidden",
+    "title": "숨김 파일 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "."
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.pathBar",
+    "scope": "com.apple.finder",
+    "actionID": "finder.pathBar",
+    "title": "경로 막대 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "option",
+          "command"
+        ],
+        "key": "P"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Path Bar",
+      "Hide Path Bar"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.preview",
+    "scope": "com.apple.finder",
+    "actionID": "finder.preview",
+    "title": "미리보기 패널 표시 전환",
+    "category": "Finder",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "P"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Preview",
+      "Hide Preview"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.duplicate",
+    "scope": "com.apple.finder",
+    "actionID": "finder.duplicate",
+    "title": "복제",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Duplicate"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.eject",
+    "scope": "com.apple.finder",
+    "actionID": "finder.eject",
+    "title": "추출",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "E"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Eject"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.back",
+    "scope": "com.apple.finder",
+    "actionID": "finder.back",
+    "title": "이전 폴더",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "["
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Back"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.forward",
+    "scope": "com.apple.finder",
+    "actionID": "finder.forward",
+    "title": "다음 폴더",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "]"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Forward"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.parent",
+    "scope": "com.apple.finder",
+    "actionID": "finder.parent",
+    "title": "상위 폴더",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Up"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Enclosing Folder"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.openSelected",
+    "scope": "com.apple.finder",
+    "actionID": "finder.openSelected",
+    "title": "선택 항목 열기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Down"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.icons",
+    "scope": "com.apple.finder",
+    "actionID": "finder.icons",
+    "title": "아이콘 보기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "1"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "as Icons"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.list",
+    "scope": "com.apple.finder",
+    "actionID": "finder.list",
+    "title": "목록 보기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "2"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "as List"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.columns",
+    "scope": "com.apple.finder",
+    "actionID": "finder.columns",
+    "title": "계층 보기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "3"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "as Columns"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderfinder.gallery",
+    "scope": "com.apple.finder",
+    "actionID": "finder.gallery",
+    "title": "갤러리 보기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "4"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "as Gallery"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderedit.copy",
+    "scope": "com.apple.finder",
+    "actionID": "edit.copy",
+    "title": "복사",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "C"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Copy"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.finderedit.paste",
+    "scope": "com.apple.finder",
+    "actionID": "edit.paste",
+    "title": "붙여넣기",
+    "category": "파일과 보기",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Paste Item",
+      "Paste Items"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/ko-kr/102650"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.address",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.address",
+    "title": "주소창으로 이동",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "L"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Open Location"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.newTab",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.newTab",
+    "title": "새 탭",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "T"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "New Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.reopen",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.reopen",
+    "title": "닫은 탭 다시 열기",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "T"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Reopen Last Closed Tab",
+      "Reopen Last Closed Window"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.nextTab",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.nextTab",
+    "title": "다음 탭",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Next Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.previousTab",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.previousTab",
+    "title": "이전 탭",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "shift"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Previous Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.lastTab",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.lastTab",
+    "title": "마지막 탭",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "9"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.back",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.back",
+    "title": "이전 페이지",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "["
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Back"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.forward",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.forward",
+    "title": "다음 페이지",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "]"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Forward"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.reload",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.reload",
+    "title": "페이지 새로고침",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "R"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Reload Page"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.reader",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.reader",
+    "title": "읽기 도구 전환",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "R"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Reader",
+      "Hide Reader"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.readingList",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.readingList",
+    "title": "읽기 목록에 추가",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Add to Reading List"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.bookmark",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.bookmark",
+    "title": "책갈피 추가",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Add Bookmark"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.pageDown",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.pageDown",
+    "title": "한 화면 아래로",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.pageUp",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.pageUp",
+    "title": "한 화면 위로",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift"
+        ],
+        "key": "Space"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.top",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.top",
+    "title": "페이지 맨 위로",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Up"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "16:com.apple.Safarisafari.bottom",
+    "scope": "com.apple.Safari",
+    "actionID": "safari.bottom",
+    "title": "페이지 맨 아래로",
+    "category": "탭과 탐색",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Down"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/safari/cpsh003/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.newWindow",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.newWindow",
+    "title": "새 터미널 창",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "N"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "New Window"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.newTab",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.newTab",
+    "title": "새 터미널 탭",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "T"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "New Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.nextTab",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.nextTab",
+    "title": "다음 탭",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Next Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.previousTab",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.previousTab",
+    "title": "이전 탭",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "control",
+          "shift"
+        ],
+        "key": "Tab"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Show Previous Tab"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.clear",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.clear",
+    "title": "스크롤백 지우기",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "K"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Clear to Start"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.find",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.find",
+    "title": "터미널 내용 찾기",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "F"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Find"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.copy",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.copy",
+    "title": "선택한 텍스트 복사",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "C"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Copy"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.paste",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.paste",
+    "title": "클립보드 붙여넣기",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "V"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Paste"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.split",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.split",
+    "title": "화면을 나누어 보기",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Split Pane"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.unsplit",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.unsplit",
+    "title": "나누기 해제",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "shift",
+          "command"
+        ],
+        "key": "D"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [
+      "Close Split Pane"
+    ],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.top",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.top",
+    "title": "스크롤백 처음으로",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "Home"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalterminal.bottom",
+    "scope": "com.apple.Terminal",
+    "actionID": "terminal.bottom",
+    "title": "스크롤백 끝으로",
+    "category": "터미널",
+    "sequence": [
+      {
+        "modifiers": [
+          "command"
+        ],
+        "key": "End"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": null,
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalshell.interrupt",
+    "scope": "com.apple.Terminal",
+    "actionID": "shell.interrupt",
+    "title": "실행 중인 명령 중단",
+    "category": "셸 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "C"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "대부분의 셸에서 사용하는 기본 키입니다. 실행 중인 프로그램에 따라 다릅니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalshell.lineStart",
+    "scope": "com.apple.Terminal",
+    "actionID": "shell.lineStart",
+    "title": "입력 줄 처음으로",
+    "category": "셸 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "A"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "기본 Emacs 입력 모드를 사용하는 셸 기준입니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalshell.lineEnd",
+    "scope": "com.apple.Terminal",
+    "actionID": "shell.lineEnd",
+    "title": "입력 줄 끝으로",
+    "category": "셸 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "E"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "기본 Emacs 입력 모드를 사용하는 셸 기준입니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  },
+  {
+    "id": "18:com.apple.Terminalshell.clear",
+    "scope": "com.apple.Terminal",
+    "actionID": "shell.clear",
+    "title": "화면 정리",
+    "category": "셸 입력",
+    "sequence": [
+      {
+        "modifiers": [
+          "control"
+        ],
+        "key": "L"
+      }
+    ],
+    "source": "builtin",
+    "aliases": [],
+    "menuPath": [],
+    "detail": "셸 설정과 실행 중인 프로그램에 따라 다를 수 있습니다.",
+    "minimumOS": null,
+    "sourceURL": "https://support.apple.com/guide/terminal/trmlshtcts/mac"
+  }
+]

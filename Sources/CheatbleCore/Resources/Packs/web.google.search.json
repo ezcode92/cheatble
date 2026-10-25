@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "bundleIdentifier": "web.google.search",
+  "appName": "Google 검색",
+  "shortcuts": [
+    {
+      "id": "google.skip",
+      "title": "본문 바로가기 선택",
+      "category": "Google 검색",
+      "keys": "Tab",
+      "sourceURL": "https://support.google.com/websearch/answer/181196?hl=en",
+      "detail": "검색 결과 맨 위에서 Tab으로 “본문 바로가기” 링크를 선택한 다음 Return을 누르세요."
+    },
+    {
+      "id": "google.open",
+      "title": "선택한 링크 열기",
+      "category": "Google 검색",
+      "keys": "Return",
+      "sourceURL": "https://support.google.com/websearch/answer/181196?hl=en",
+      "detail": "키보드로 링크에 포커스를 맞춘 상태에서 누르세요."
+    },
+    {
+      "id": "google.address",
+      "title": "주소창에서 새 검색",
+      "category": "Safari에서 검색",
+      "keys": "Command+L",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Safari 검색 엔진이 Google이면 검색어를 입력하고 Return을 누르세요. 다른 검색 엔진이면 google.com을 먼저 여세요."
+    },
+    {
+      "id": "google.newTabSearch",
+      "title": "입력한 검색을 새 탭에서 열기",
+      "category": "Safari에서 검색",
+      "keys": "Command+Return",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Safari 주소창에 검색어를 입력한 뒤 누릅니다. 검색 엔진을 Google로 설정한 경우입니다."
+    },
+    {
+      "id": "google.newActiveTabSearch",
+      "title": "새 탭에서 검색하고 이동",
+      "category": "Safari에서 검색",
+      "keys": "Command+Shift+Return",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Safari 주소창에 검색어를 입력한 뒤 누릅니다. Safari 탭 설정에 따라 새 창으로 열릴 수 있습니다."
+    },
+    {
+      "id": "google.nextLink",
+      "title": "다음 검색 결과·링크 선택",
+      "category": "Safari에서 검색",
+      "keys": "Option+Tab",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Safari 기본 설정 기준입니다. 고급 설정의 “Tab 키를 눌러 웹 페이지에 있는 각 항목 하이라이트하기”가 켜져 있으면 Tab을 사용하세요."
+    },
+    {
+      "id": "google.find",
+      "title": "현재 결과 페이지에서 찾기",
+      "category": "Safari에서 검색",
+      "keys": "Command+F",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "Google에 새로 검색하는 기능이 아니라 현재 페이지 안의 텍스트를 찾습니다."
+    },
+    {
+      "id": "google.back",
+      "title": "결과 페이지로 돌아가기",
+      "category": "Safari에서 검색",
+      "keys": "Command+[",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "검색 결과 링크를 같은 탭에서 연 뒤 누릅니다."
+    },
+    {
+      "id": "google.scrollDown",
+      "title": "검색 결과 한 화면 아래로",
+      "category": "Safari에서 검색",
+      "keys": "Space",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "검색어 입력란 밖에 포커스가 있을 때 동작합니다."
+    },
+    {
+      "id": "google.scrollUp",
+      "title": "검색 결과 한 화면 위로",
+      "category": "Safari에서 검색",
+      "keys": "Shift+Space",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "검색어 입력란 밖에 포커스가 있을 때 동작합니다."
+    },
+    {
+      "id": "google.top",
+      "title": "검색 결과 맨 위로",
+      "category": "Safari에서 검색",
+      "keys": "Command+Up",
+      "sourceURL": "https://support.apple.com/en-gb/guide/safari/cpsh003/27.0/mac/27",
+      "detail": "검색어 입력란 밖에 포커스가 있을 때 동작합니다."
+    }
+  ]
+}
